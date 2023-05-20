@@ -9,9 +9,7 @@ export const Todos = (props) => {
                 No Todos to display
             </div> :
                 props.todos.map((todo) => {
-                    return (<> <TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete} />
-                        <hr />
-                    </>)
+                    return  <TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete} />
                 })}
         </div>
     )
